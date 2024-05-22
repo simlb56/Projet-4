@@ -1,0 +1,23 @@
+@keyframes grow {
+    50% {
+        transform: scale(1);
+    }
+  }
+  
+  @keyframes disappear {
+    to {
+        transform: scale(0);
+    }
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+  
+    70% {
+        opacity: 0.5;
+    }
+  }
+ 

@@ -1,0 +1,376 @@
+.header-menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+
+    @media (min-width: 992px) {
+      align-items: unset;
+      position: unset;
+  }
+
+}
+.header-menus img {
+  border-radius: unset;
+  width: 40%;
+
+  @media (min-width: 778px) {
+    width: 20%;
+    border-radius: unset;
+    align-items: unset;
+    position: unset;
+  }
+}
+
+
+.fa-arrow-left {
+    font-size: larger;
+    color: black;
+
+    @media (min-width: 992px){
+        position: absolute;
+        left: 50px;
+        padding-top: 15px;
+        align-items: center;
+    }
+}  
+
+.menus-cards {
+    display: flex;
+    flex-direction: Column;
+    padding-top: 0;
+    width: 100%;
+    background-color: white;
+
+    img {
+    height: 300px;
+    border-radius: unset;
+    background-color: unset;
+    width: 100%;
+  }
+}
+
+.menus-cards h2 {
+    font-weight: unset;
+    header {
+    padding: 0;
+    background-color:unset;
+  }
+}
+
+.menus-cards article {
+    display: flex;
+    flex-direction: column;;
+    margin-top: -5rem;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    padding: 20px;
+    background-color: var(--darker-grey);
+  
+    header {
+    @include space;
+    position: relative;
+    flex-direction: row;
+    background-color: unset;
+    font-family: shrikhand, cursive;
+    box-shadow: unset;
+    }
+}
+
+article header .fas.fa-heart {
+  color: transparent;
+}
+
+article header .fas.fa-heart,
+article header .far.fa-heart {
+  position: absolute;
+  font-size: 2em;
+  border: unset; 
+  right: 27px; 
+  cursor: pointer;
+  padding-top: 15px;
+  overflow: hidden !important;
+  transition-duration: 3s; 
+}
+
+  article header .far.fa-heart:hover,
+  article header .far.fa-heart:focus,
+  article header .fas.fa-heart:hover,
+  article header .fas.fa-heart:focus {
+    color: rgb(147, 86, 220);
+  }
+
+
+
+figure .far.fa-heart,
+figure .fas.fa-heart {
+  @include icon-heart1;
+  cursor: pointer;
+}
+
+figure .fas.fa-heart {
+  color: transparent;
+  overflow: hidden !important;
+  transition-duration: 3s; 
+}
+
+figure .far.fa-heart:hover,
+figure .far.fa-heart:focus,
+figure .fas.fa-heart:hover,
+figure .fas.fa-heart:focus {
+  color: rgb(147, 86, 220);
+}
+
+
+.menus-cards h1 {
+  font-size: 27px;
+}
+
+.menus-cards article section {
+  font-style: normal;
+   @include horizontal;
+    width: 100%;
+}
+
+.underline-h2 {
+    width: 50px;
+    height: 0.25em;
+    background-color: var(--light-green);
+    margin: 0;
+    margin-left: 0px;
+    padding: 0;
+    margin-left:1px;
+}
+
+.menus-cards article section h2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: medium;
+  }
+
+.menus-cards article section ul {
+    @include horizontal;
+    width: 100%; 
+    gap: unset;
+    margin: 0px;
+
+    .menus-cards .order-card1 li,
+    .menus-cards .order-card2 li,
+    .menus-cards .order-card3 li {
+      @include space;
+      background-color: var(--white);
+      box-shadow: 2px 2px 2px var(--light-grey);
+      line-height: normal;
+      border-radius: 20px 20px;
+      height: fit-content;
+
+  }
+}
+
+.fa-circle-check{
+    color: var(--white);
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    transform: rotate(360deg);
+    transition-duration: .5s;
+
+  li:hover .fa-circle-check,
+  li:focus .fa-circle-check  {
+    transform: rotate(0);
+  }
+}
+
+li div {
+    display: flex;
+    background-color: var(--light-green);
+    margin: -2rem -6rem -2rem 2rem;
+    width: 100px;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    justify-content: center;
+    transition-duration: .5s;
+    margin-right: -125px;
+  }
+  
+li:hover div ,
+li:focus div {
+    margin-right: -1.5rem;
+}
+
+.menus-cards .order-card1 li,
+.menus-cards .order-card2 li,
+.menus-cards .order-card3 li {
+ @include center;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px var(--light-grey);
+  padding: 20px;
+  line-height: normal;
+  border-radius: 20px 20px;
+  height: fit-content;
+  margin-bottom: unset;
+}
+
+.menus-cards .menus-btn {
+    align-self: center;
+    border-radius: 30px;
+    border: unset;
+    height: 50px;
+    color: var(--white);
+    width: 30%;
+    cursor: pointer;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.8),rgba(255,121,218,.8));
+    box-shadow: 8px 8px 2px var(--darker-grey);
+    font-weight: bolder;
+}
+
+footer li >a{
+  font-weight: bolder;
+  color: var(--white);
+}
+
+//* menus structure *//
+.order-card1 li {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
+}
+
+.order-card1 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card1 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card1 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card1 li b {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+.order-card2 li {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
+}
+
+.order-card2 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card2 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card2 li b {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+.order-card3 li {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  border-radius: .75rem;
+  margin: 1rem 0;
+  box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: slide-in-top 3s ease ;
+  max-width: 100%;
+}
+
+.order-card3 li section {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.order-card3 li section h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card3 li section p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.order-card3 li b {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 2rem;
+  margin-top: 20px;
+}
+
+@media (min-width: 992px){
+    .menus-cards article header {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+}
+@media (min-width: 992px){
+  article header .fas.fa-heart,
+  article header .far.fa-heart {
+    right: 120px;
+  }
+}
+@media (min-width: 992px){
+    .menus-cards article {
+      margin-left: 120px;
+      margin-right:120px;
+      padding: 50px 100px;
+    }
+}

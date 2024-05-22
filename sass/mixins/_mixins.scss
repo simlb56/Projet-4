@@ -1,0 +1,23 @@
+// Définition des mixin
+@mixin center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin space {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin horizontal {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin icon-heart1 {
+    position: absolute;
+    font-size: 2em;
+    border: unset; 
+    right: 20px; 
+    padding-top: 5px
+}

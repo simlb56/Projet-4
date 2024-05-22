@@ -1,0 +1,63 @@
+
+//main elements
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+
+img {
+    max-width: 100%;
+    box-sizing: border-box ;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.numbers {
+    @include center;
+    background-color: var(--purple);
+    color: var(--white);
+    width: 1rem;
+    height: 1rem;
+    padding: 5px;
+    border-radius: 50%;
+    position: relative;
+    right: 6px;
+    bottom: 5px;
+}
+
+figure {
+    position:relative;
+    border: 1px ;
+    border-radius: 20px;
+    background: var(--white);
+    width: 100%;
+}
+
+figcaption {
+    @include space;
+    padding: 20px;
+    text-overflow: ellipsis;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--light-black);
+    line-height: 1.5rem;
+    padding-left: 20px;
+
+    @media (min-width: 992px){
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        gap: 50px;
+    }
+}
+
