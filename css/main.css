@@ -82,7 +82,7 @@
   font-family: shrikhand, cursive;
   box-shadow: unset;
 }
-
+ /* COEUR*/
 article header .fas.fa-heart {
   color: transparent;
 }
@@ -149,7 +149,7 @@ figure .fas.fa-heart:focus {
   padding: 0;
   margin-left: 1px;
 }
-
+ /* MENU */
 .menus-cards article section h2 {
   text-transform: uppercase;
   margin-bottom: 0;
