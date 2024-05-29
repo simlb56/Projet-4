@@ -16,4 +16,4 @@ Page d'accueil
 
 les plats apparaîtront progressivement avec un léger décalage dans le temps.
 
-Ils pourront soit apparaître un par un, soit par groupe « Entrée », « Plat » et « Dessert »
+Ils pourront soit apparaître un par un, soit par groupe « Entrée », « Plat » et « Dessert ».
