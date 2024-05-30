@@ -11,7 +11,7 @@ h1 {
       border-radius: unset;
     }
 }
-
+/* LOCALISATION */
 .search-bar {
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ h1 {
   background-color: var(--grey);
   border: unset;
 }
-
+/* MAIN */
 .main-header  {
     @include center;
     flex-direction: column;
@@ -64,7 +64,7 @@ h1 {
   box-shadow: 0 10px 6px var(--light-grey);
   }
 }
-
+/* INTRODUCTION */
 .introduction  {
   display: flex;
   flex-direction: column;
@@ -201,7 +201,7 @@ figcaption > p{
   border: unset;
   padding: 5px;
 }
-
+/* FOOTER */
 footer h3 {
   font-family:"Shrikhand", cursive;
   font-weight: lighter;
