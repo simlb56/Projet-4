@@ -23,7 +23,7 @@
   }
 }
 
-
+/* Flèche */
 .fa-arrow-left {
     font-size: larger;
     color: black;
@@ -58,7 +58,7 @@
     background-color:unset;
   }
 }
-
+/* FOND GRIS */
 .menus-cards article {
     display: flex;
     flex-direction: column;;
@@ -77,7 +77,7 @@
     box-shadow: unset;
     }
 }
-
+/* COEUR POUR MENUS*/
 article header .fas.fa-heart {
   color: transparent;
 }
@@ -86,7 +86,7 @@ article header .fas.fa-heart,
 article header .far.fa-heart {
   position: absolute;
   font-size: 2em;
-  border: unset; 
+  border: unset;
   right: 27px; 
   cursor: pointer;
   padding-top: 15px;
@@ -102,7 +102,7 @@ article header .far.fa-heart {
   }
 
 
-
+/* COEUR POUR PAGE PRINCIPAL */
 figure .far.fa-heart,
 figure .fas.fa-heart {
   @include icon-heart1;
@@ -111,6 +111,7 @@ figure .fas.fa-heart {
 
 figure .fas.fa-heart {
   color: transparent;
+  /* pour  gérer le dépassement du contenu d'un élément dans son bloc */
   overflow: hidden !important;
   transition-duration: 3s; 
 }
@@ -122,7 +123,7 @@ figure .fas.fa-heart:focus {
   color: rgb(147, 86, 220);
 }
 
-
+/* MENU */
 .menus-cards h1 {
   font-size: 27px;
 }
@@ -132,7 +133,7 @@ figure .fas.fa-heart:focus {
    @include horizontal;
     width: 100%;
 }
-
+/* UNDERLINE */
 .underline-h2 {
     width: 50px;
     height: 0.25em;
@@ -154,25 +155,29 @@ figure .fas.fa-heart:focus {
     width: 100%; 
     gap: unset;
     margin: 0px;
-
+    
+  /* ANIMATION FLECHE VERTE */
     .menus-cards .order-card1 li,
     .menus-cards .order-card2 li,
     .menus-cards .order-card3 li {
       @include space;
       background-color: var(--white);
       box-shadow: 2px 2px 2px var(--light-grey);
+      /*hauteur d'une zone de ligne*/
       line-height: normal;
       border-radius: 20px 20px;
+     /* Utilisez l'espace disponible*/
       height: fit-content;
 
   }
 }
-
+/* Animation Prix */
 .fa-circle-check{
     color: var(--white);
     font-size: xx-large;
     text-align: center;
     border-radius: 0 20px 20px 0;
+    /* Permet à la flèche de tourner */
     transform: rotate(360deg);
     transition-duration: .5s;
 
@@ -231,6 +236,9 @@ footer li >a{
 }
 
 //* menus structure *//
+
+/* Card1 */
+
 .order-card1 li {
   background-color: #fff;
   padding: 1rem;
@@ -243,26 +251,27 @@ footer li >a{
   animation: slide-in-top 3s ease ;
   max-width: 100%;
 }
-
+/* TEXTE */
 .order-card1 li section {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+/* H3 */
 .order-card1 li section h3 {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-
+/* P */
 .order-card1 li section p {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-
+/* PRIX */
 .order-card1 li b {
   font-weight: 700;
   display: flex;
@@ -271,7 +280,7 @@ footer li >a{
   padding-left: 2rem;
   margin-top: 20px;
 }
-
+/* CARD 2 */
 .order-card2 li {
   background-color: #fff;
   padding: 1rem;
@@ -312,7 +321,7 @@ footer li >a{
   padding-left: 2rem;
   margin-top: 20px;
 }
-
+/* CARD 3 */
 .order-card3 li {
   background-color: #fff;
   padding: 1rem;
@@ -353,7 +362,7 @@ footer li >a{
   padding-left: 2rem;
   margin-top: 20px;
 }
-
+/* Format desktop */
 @media (min-width: 992px){
     .menus-cards article header {
       display: flex;

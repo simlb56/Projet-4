@@ -1,15 +1,17 @@
+/* ANIMATION DU LOADER */
+/* Grandir */
 @keyframes grow {
     50% {
         transform: scale(1);
     }
   }
-  
+  /* Disparaître */
   @keyframes disappear {
     to {
         transform: scale(0);
     }
   }
-  
+  /* Transformation */
   @keyframes slide-in-top {
     0% {
         transform: translateY(1000px);

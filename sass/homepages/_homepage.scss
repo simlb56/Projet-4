@@ -1,3 +1,4 @@
+/* HEADER */
 h1 {
     font-size: 24px;
   }
@@ -98,7 +99,7 @@ h1 {
   box-shadow: rgb(50 50 93 / 0%) 0px 5px 20px 0px, rgb(0 0 0 / 30%) -1px 5px 30px -10px;
   background-color: var(--light-grey);
 }
-
+/* ICON INTRODUCTION */
 .introduction li:hover .icons,
 .introduction li:focus .icons {
   color: rgb(147, 86, 220);
@@ -201,6 +202,7 @@ figcaption > p{
   border: unset;
   padding: 5px;
 }
+
 /* FOOTER */
 footer h3 {
   font-family:"Shrikhand", cursive;

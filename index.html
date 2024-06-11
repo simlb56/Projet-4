@@ -10,15 +10,16 @@
 
 <body>
     <!-- LOADER-->
-    <div class="spinner">
-        <div class="spinner_wrapper">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+    <div class="loader">
+        <div class="loader_wrapper">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
         </div>
     </div>
-     <!-- HEADER -->   
+
+    <!-- HEADER -->   
     <header class="logo">
         <img src="images/ohmyfood@2x.svg" alt="logo">
     </header>
@@ -27,21 +28,27 @@
         <i class="fa-solid fa-location-dot"></i>
         <input type="search" placeholder="Paris, Belleville">
     </form>
+
+    <!-- INTRODUCTION-->
     <main>
-        <header class="main-header">
+        <section class="Booking">
             <h1>Réserver le menu qui vous convient</h1>
-            <p class="main-header__text">Découvrez les restaurants d'exception, sélectionnés par nos soins</p>
+            <p class="Booking__text">Découvrez les restaurants d'exception, sélectionnés par nos soins.</p>
             <!--POUR QUE LE BOUTON NOUS ENVOIS SUR LES MENUS-->
             <a href="#restaurant-cards">
-                Explorer nos restaurants
+                <img src="images/Button.png">
+               <!-- Explorer nos restaurants-->
             </a>
-        </header>
+        </section>
+
         <!--FONCTIONNEMENT-->
         <section class="introduction">
             <h2>Fonctionnement</h2>
             <ul>
                 <li>
+                    <!--NUMERO-->
                     <i class="fa-solid fa-1 numbers"></i>
+                    <!--ICON-->
                     <i class="fa-solid fa-mobile-screen-button icons"></i>
                     Choisissez un restaurant
                 </li>
@@ -59,8 +66,9 @@
                 </li>
             </ul>
         </section>
-        <!--ID POUR LE LIEN AVEC LE BOUTON EXPLORER NOS RESTAURANTS-->
+        
         <!--CARD-->
+        <!--ID POUR LE LIEN AVEC LE BOUTON EXPLORER NOS RESTAURANTS-->
         <section class="restaurant-cards" id="restaurant-cards">
             <h2>Restaurants</h2>
             <ul class="restaurant-section">
@@ -68,12 +76,14 @@
                     <a href="menus/la-palette-du-gout.html">
                     <figure>
                             <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo La palette du goût">
+                            <!--NOUVEAU-->
                             <figcaption> 
                                 <p>Nouveau</p>
                                 <section>
                                     <h3>La palette du goût</h3>
                                     <p>Ménilmontan</p>
                                 </section>
+                                <!--coeur transparent et de couleur-->
                                 <i class="far fa-heart"></i>
                                 <i class="fas fa-heart"></i>
                             </figcaption>
@@ -129,18 +139,21 @@
             </ul>
         </section>
     </main>
+    
     <!--Footer-->
     <footer>
         <h3>ohmyfood</h3>
         <ul>
             <li>
                 <a href="#">
+                    <!---ICON-->
                     <i class="fa-solid fa-utensils"></i>
                     Proposer un restaurant 
                 </a>
             </li>
             <li>
                 <a href="#">
+                    <!---ICON-->
                 <i class="fa-solid fa-handshake-angle"></i>
                 Devenir partenaire
                 </a>
