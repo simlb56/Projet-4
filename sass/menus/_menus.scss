@@ -78,52 +78,80 @@
     }
 }
 /* COEUR POUR MENUS*/
-article header .fas.fa-heart {
-  color: transparent;
-}
 
-article header .fas.fa-heart,
-article header .far.fa-heart {
+.main_menu .card__info__heart{
   position: absolute;
-  font-size: 2em;
+  font-size: 1.5em;
   border: unset;
-  right: 27px; 
+  right: 100px;
+  top: 45px;
+ align-items: center;
   cursor: pointer;
-  padding-top: 15px;
-  overflow: hidden !important;
-  transition-duration: 3s; 
 }
 
-  article header .far.fa-heart:hover,
-  article header .far.fa-heart:focus,
-  article header .fas.fa-heart:hover,
-  article header .fas.fa-heart:focus {
-    color: rgb(147, 86, 220);
-  }
+.main_menu .card__info__heart::before{
+  content:"";
+  font-family:"Font Awesome 5 Free";
+  position:absolute;
+  transition:all .8s ease-in-out}
+
+.main_menu .card__info__heart::after{
+  content:"";
+  font-family:"Font Awesome 5 Free";
+  position:absolute;transition:all .8s ease-in-out;
+  background:linear-gradient(to bottom, #9356DC,#FF79DA 80%);
+  background-clip:text;
+  opacity:0;
+  cursor:pointer
+}
+
+.main_menu .card__info__heart:hover::after{color:transparent;font-weight:900;opacity:1}
+
 
 
 /* COEUR POUR PAGE PRINCIPAL */
-figure .far.fa-heart,
-figure .fas.fa-heart {
-  @include icon-heart1;
+.restaurants .card__info__heart{
+  position: absolute;
+  font-size: 2em;
+  border: unset;
+  right: 50px;
   cursor: pointer;
 }
+.restaurants .card__info__heart::before{
+  content:"";
+  font-family:"Font Awesome 5 Free";
+  position:absolute;
+  transition:all .8s ease-in-out}
 
-figure .fas.fa-heart {
-  color: transparent;
-  /* pour  gérer le dépassement du contenu d'un élément dans son bloc */
-  overflow: hidden !important;
-  transition-duration: 3s; 
+.restaurants .card__info__heart::after{
+  content:"";
+  font-family:"Font Awesome 5 Free";
+  position:absolute;
+  transition:all .8s ease-in-out;
+  background:linear-gradient(to bottom, #9356DC,#FF79DA 80%);
+  background-clip:text;
+  opacity:0;
+  cursor:pointer
 }
 
-figure .far.fa-heart:hover,
-figure .far.fa-heart:focus,
-figure .fas.fa-heart:hover,
-figure .fas.fa-heart:focus {
-  color: rgb(147, 86, 220);
+.restaurants .card__info__heart:hover::after{
+  color:transparent;
+  font-weight:900;
+  opacity:1
 }
+
 
 /* MENU */
+
+.main_menu h1{
+  font-weight:500;
+  text-align: center;
+  font-family: shrikhand;
+  font-style: italic;
+}
+.main_menu_title{
+  gap:20px;
+}
 .menus-cards h1 {
   font-size: 27px;
 }
@@ -134,9 +162,9 @@ figure .fas.fa-heart:focus {
     width: 100%;
 }
 /* UNDERLINE */
-.underline-h2 {
-    width: 50px;
-    height: 0.25em;
+.underline {
+    width: 40px;
+    height: 0.20em;
     background-color: var(--light-green);
     margin: 0;
     margin-left: 0px;
@@ -160,7 +188,8 @@ figure .fas.fa-heart:focus {
     .menus-cards .order-card1 li,
     .menus-cards .order-card2 li,
     .menus-cards .order-card3 li {
-      @include space;
+      display: flex;
+      justify-content: space-between;
       background-color: var(--white);
       box-shadow: 2px 2px 2px var(--light-grey);
       /*hauteur d'une zone de ligne*/
@@ -177,15 +206,6 @@ figure .fas.fa-heart:focus {
     font-size: xx-large;
     text-align: center;
     border-radius: 0 20px 20px 0;
-    /* Permet à la flèche de tourner */
-    transform: rotate(360deg);
-    transition-duration: .5s;
-
-  li:hover .fa-circle-check,
-  li:focus .fa-circle-check  {
-    transform: rotate(0);
-  }
-}
 
 li div {
     display: flex;
@@ -248,7 +268,9 @@ footer li >a{
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   overflow: hidden;
   cursor: pointer;
-  animation: slide-in-top 3s ease ;
+  animation: fade 3000ms;
+    animation-delay: 0ms;
+    animation-fill-mode: both;
   max-width: 100%;
 }
 /* TEXTE */
@@ -290,7 +312,9 @@ footer li >a{
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   overflow: hidden;
   cursor: pointer;
-  animation: slide-in-top 3s ease ;
+  animation: fade 3000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: both;
   max-width: 100%;
 }
 
@@ -331,7 +355,9 @@ footer li >a{
   box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
   overflow: hidden;
   cursor: pointer;
-  animation: slide-in-top 3s ease ;
+  animation: fade 3000ms;
+    animation-delay: 2000ms;
+    animation-fill-mode: both;
   max-width: 100%;
 }
 
@@ -376,10 +402,22 @@ footer li >a{
     right: 120px;
   }
 }
+@media (min-width: 982px) {
+  .main_menu .card__info__heart {
+    position: absolute;
+  font-size: 1.5em;
+  border: unset;
+  right: 450px;
+  top: 70px;
+ align-items: center;
+  cursor: pointer
+  }
+}
 @media (min-width: 992px){
     .menus-cards article {
       margin-left: 120px;
       margin-right:120px;
       padding: 50px 100px;
     }
+}
 }

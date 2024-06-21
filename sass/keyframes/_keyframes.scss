@@ -1,25 +1,46 @@
 /* ANIMATION DU LOADER */
-/* Grandir */
-@keyframes grow {
-    50% {
-        transform: scale(1);
-    }
+@keyframes loader {
+  40% {
+      opacity: 100%;
   }
-  /* Disparaître */
-  @keyframes disappear {
-    to {
-        transform: scale(0);
-    }
+
+  100% {
+      opacity: 0%;
+      pointer-events: none;
   }
-  /* Transformation */
-  @keyframes slide-in-top {
+}
+@keyframes rotateC {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(45deg);
+  }
+
+  100% {
+      transform: rotate(405deg);
+  }
+}
+/* Keyframes cartes */
+ 
+  @keyframes fade {
     0% {
-        transform: translateY(1000px);
         opacity: 0;
     }
   
-    70% {
-        opacity: 0.5;
+    23.333% {
+        opacity: 50%;
+    }
+  
+    33.333% {
+        opacity: 100%;
+  
     }
   }
- 
