@@ -38,7 +38,7 @@
 @media (min-width: 992px) {
   .fa-arrow-left {
     position: absolute;
-    left: 50px;
+    left: 250px;
     padding-top: 15px;
     align-items: center;
   }
@@ -518,7 +518,6 @@ footer li > a {
   }*/
 
   .loader .balle {
-      /*display: block;*/
       position: absolute;
       top: calc(50% - 10px);
       left: 50%;
@@ -632,6 +631,7 @@ h1 {
   padding: 20px;
   gap: 50px;
   background-color: var(--white);
+  
 }
 .Fonctionnement .texte {
   display: flex;
@@ -676,6 +676,11 @@ h1 {
   cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
   background-color: var(--light-grey);
+}
+@media (min-width: 420px) {
+  .Fonctionnement li {
+    width: 535px;
+  }
 }
 
 /*.Fonctionnement li:hover .icons {

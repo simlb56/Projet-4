@@ -23,13 +23,12 @@
       border-radius: 50%;
       box-shadow: 0 0 20px rgba(0, 0, 0, .5);
   }
-
+/* PLACEMENT DE LA BALLE */
   .loader .balle {
       position: absolute;
       top: calc(50% - 10px);
       left: 50%;
       width: 50%;
-      height: 4px;
       transform-origin: left;
       animation: rotate 1s linear infinite;
   }
@@ -41,8 +40,8 @@
       height: 20px;
       border-radius: 70%;
       background: #9356DC;
-      top: -36px;
-      right: -56px;
+     /* top: -6px;
+      right: -6px;*/
  }
 
  .loader .p{
