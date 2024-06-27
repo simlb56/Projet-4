@@ -13,6 +13,7 @@
   .menus {
     align-items: unset;
     position: unset;
+    display: flex;
   }
 }
 .menus-cards img{
@@ -33,15 +34,18 @@
 .fa-arrow-left {
   font-size: larger;
   color: black;
+  position: absolute;
+  top: 30px;
+  left:30px
 }
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .fa-arrow-left {
     position: absolute;
     left: 350px;
     padding-top: 15px;
     align-items: center;
   }
-}
+}*/
 /* MENU */
 
 .menus-cards {
@@ -137,12 +141,27 @@
  align-items: center;
   cursor: pointer;
 }
-@media (min-width: 982px) {
+@media (max-width: 386px) {
+  .main_menu .card__info__heart {
+right:25px
+  }
+}
+@media (min-width: 1432px) {
   .main_menu .card__info__heart {
     position: absolute;
   font-size: 1.5em;
   border: unset;
   right: 450px;
+  top: 70px;
+ align-items: center;
+  cursor: pointer
+  }
+}
+@media (min-width: 992px) {
+  .main_menu .card__info__heart {
+    position: absolute;
+  font-size: 1.5em;
+  border: unset;
   top: 70px;
  align-items: center;
   cursor: pointer
