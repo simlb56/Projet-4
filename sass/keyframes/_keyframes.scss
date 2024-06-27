@@ -1,4 +1,5 @@
 /* ANIMATION DU LOADER */
+/* ARRET */
 @keyframes loader {
   40% {
       opacity: 100%;
@@ -9,16 +10,8 @@
       pointer-events: none;
   }
 }
-@keyframes rotateC {
-  0% {
-      transform: rotate(0deg);
-  }
 
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
+/* ROTATION */
 @keyframes rotate {
   0% {
       transform: rotate(45deg);
@@ -28,6 +21,8 @@
       transform: rotate(405deg);
   }
 }
+
+
 /* Keyframes cartes */
  
   @keyframes fade {
